@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 02, 2023 at 01:53 AM
--- Server version: 10.4.28-MariaDB
--- PHP Version: 8.2.4
+-- Generation Time: Jun 26, 2024 at 12:29 PM
+-- Server version: 10.4.32-MariaDB
+-- PHP Version: 8.2.12
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -44,8 +44,6 @@ INSERT INTO `ordertable` (`order_id`, `Product_id`, `order_date`, `payment_statu
 (4, 8, '2023-08-26', 'pending', 3, 5),
 (6, 4, '2023-09-05', 'pending', 3, 4),
 (10, 5, '2023-09-25', 'pending', 3, 6),
-(12, 14, '2023-09-25', 'Rejected', 4, 7),
-(13, 15, '2023-09-25', 'Confirmed', 4, 7),
 (14, 9, '2023-09-26', 'pending', 3, 6);
 
 -- --------------------------------------------------------
@@ -69,7 +67,6 @@ INSERT INTO `paymenttable` (`payment_id`, `order_id`, `payment_status`, `Product
 (4, 4, 'pending', 8),
 (6, 6, 'pending', 4),
 (10, 10, 'pending', 5),
-(12, 12, 'Rejected', 14),
 (14, 14, 'pending', 9);
 
 -- --------------------------------------------------------
@@ -104,9 +101,8 @@ INSERT INTO `productdetails` (`Product_id`, `user_id`, `product_name`, `category
 (8, 3, 'Washing Machine', 'Electronics', '25000', 'databaseimage/image-removebg-preview (5).png', '2', 'Simplify your laundry routine with this dependable washing machine, a faithful companion for two years. From freshening up clothes to tackling tough stains, it\'s been a reliable workhorse. With a history of clean clothes and convenience, this machine is ready to join a new home. Streamline your chores with a trusted laundry ally.', 'pending', 1),
 (9, 3, 'Piano', 'Electronics', '50000', 'databaseimage/image-removebg-preview (4).png', '6', 'Unlock the melodies of time with this well-loved piano, harmonizing through six years of musical journeys. From delicate notes to powerful chords, it has enriched countless melodies. With its own unique story embedded in every key, this piano carries the spirit of its past and the promise of new compositions. Elevate your music with the resonance of experience.', 'pending', 1),
 (13, 6, 'iphone 8', 'Electronics', '9000', 'databaseimage/rr.jpg', '3', 'jfdslafdsjlafjdlsjafdlsaf', 'Sell', 1),
-(14, 4, 'aakash bakash', 'Select Category', '1', 'databaseimage/WIN_20211222_10_26_48_Pro.jpg', '2', 'hahahahaha', 'pending', 1),
-(15, 4, 'aaku', 'Select Category', '2', 'databaseimage/WIN_20211222_10_27_05_Pro.jpg', '4', 'asasasasdasda', 'Sell', 1),
-(17, 6, 'fan', 'Electronics', '30000', 'databaseimage/370270306_1975768039463294_8873000215949663849_n.jpg', '3', 'gfdsgfdsgf', 'pending', 1);
+(17, 6, 'fan', 'Electronics', '30000', 'databaseimage/370270306_1975768039463294_8873000215949663849_n.jpg', '3', 'gfdsgfdsgf', 'pending', 1),
+(18, 10, 'Iphone 15 Pro Max', 'Electronics', '2,34,000', 'databaseimage/OIF.jpg', 'Brand New', 'The iPhone 15 Pro Max offers cutting-edge technology and sleek design. With its advanced A-series chip, stunning Super Retina XDR display, and exceptional camera system, it delivers top-tier performance for both productivity and entertainment. Featuring 5G connectivity, enhanced battery life, and a range of storage options, the iPhone 15 Pro Max is designed to meet the demands of modern users looking for premium functionality and style.', 'pending', 1);
 
 -- --------------------------------------------------------
 
@@ -138,8 +134,10 @@ INSERT INTO `userdetails` (`user_id`, `name`, `email`, `phone`, `password`, `tok
 (5, 'Basanta Paudel', 'pdlbasanta@gmail.com', '0987654321', '$2y$10$08oF9bucOg9zi7QS0W/6R.vjvgN.wzZL.0cQJuoXme4w9VD9a1/GC', '', 'aakash ko ghar', 'male', 'user', '2023-08-26 10:15:04', 'profilepic/WIN_20230826_13_59_06_Pro.jpg'),
 (6, 'Aakash Kandel', 'kandelaakash00@gmail.com', '9805449777', '$2y$10$N6CHRydcdlmnANErpkbWT.lchX0Asj4tP/cyxk9nICD3rn255WRwS', '', ' 731', 'male', 'user', '2023-09-25 16:40:59', 'profilepic/rr.jpg'),
 (7, 'Alvir', 'alvir15@gmail.com', '9876543210', '$2y$10$a70JdCe.ZA/KvLQs4udxWeowU5vTD4AWuRmgQWfskfKCU6gzrf8qa', '', 'Jr. Kali No. 731', 'male', 'user', '2023-09-25 18:58:01', 'profilepic/rr.jpg'),
-(8, 'Admin', 'akadmin@gmail.com', '9805449777', '$2y$10$BoSZxBO.TKsogNofaDCdIOantC17xGGaLmbroKU2STu2T/KA5v7vm', '', 'Jr. Kali No. 731', 'male', 'admin', '2023-09-25 19:53:43', 'profilepic/rr.jpg'),
-(9, '-123', 'pratik@gmail.com', '9805449777', '$2y$10$mJojUGBnOF04OYtlCGzqsON4HFNww2fyo8Rjj.sI.JDnbRp.hRCvK', '', 'Jr. Kali No. 731', 'male', 'user', '2023-09-26 07:06:10', 'profilepic/rijan1.jpg');
+(8, 'Admin', 'akadmin@gmail.com', '9805449777', '', '', 'Bansbari', 'male', 'admin', '2023-09-25 19:53:43', 'profilepic/OIP (3).jpg'),
+(9, '-123', 'pratik@gmail.com', '9805449777', '$2y$10$mJojUGBnOF04OYtlCGzqsON4HFNww2fyo8Rjj.sI.JDnbRp.hRCvK', '', 'Jr. Kali No. 731', 'male', 'user', '2023-09-26 07:06:10', 'profilepic/rijan1.jpg'),
+(10, 'Yubraj Khatri', 'yubrajkhatri21@gmail.com', '9866243251', '$2y$10$WY0Ehr1TXrH3d6/yeXK7kOb2POPHCvgjZT6Io8LO.NiKYZYPpx9Tm', '', 'Bansbari', 'male', 'user', '2024-06-26 09:45:05', 'profilepic/profile-pic (2).png'),
+(11, 'Mohammed Umar Akhtar', 'umar@gmail.com', '9813289549', '$2y$10$n2qi6d8xhdWClhqLLgMOwu.2kC3KheufG8vM7RFC6gQ4UymBE3ZkG', '', 'Dillibazar', 'male', 'user', '2024-06-26 09:45:45', 'profilepic/435099148_2165655637117848_9074805688371115394_n.jpg');
 
 --
 -- Indexes for dumped tables
@@ -195,13 +193,13 @@ ALTER TABLE `paymenttable`
 -- AUTO_INCREMENT for table `productdetails`
 --
 ALTER TABLE `productdetails`
-  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `Product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 
 --
 -- AUTO_INCREMENT for table `userdetails`
 --
 ALTER TABLE `userdetails`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Constraints for dumped tables
