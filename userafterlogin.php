@@ -455,18 +455,18 @@ include('php/connector.php');
                     <div class="footer-col">
                         <h4>online shop</h4>
                         <ul>
-                            <li><a href="#">vhicles</a></li>
-                            <li><a href="#">clothing</a></li>
-                            <li><a href="#">electronics</a></li>
-                            <li><a href="#">mobiles</a></li>
-                            <li><a href="#">accessories</a></li>
-                            <li><a href="#">others</a></li>
+                        <li><a href="https://hamrobazaar.com/category/automobiles/EB9C8147-07C0-4951-A962-381CDB400E37">vehicles</a></li>
+                            <li><a href="https://www.daraz.com.np/mens-clothing/?spm=a2a0e.11779170.cate_3.1.287d2d2bO58xz4">clothing</a></li>
+                            <li><a href="https://gizmostorenepal.com/">electronics</a></li>
+                            <li><a href="https://gizmostorenepal.com/">mobiles</a></li>
+                            <li><a href="https://hukut.com/">accessories</a></li>
+                            <li><a href="https://hukut.com/">others</a></li>
                         </ul>
                     </div>
                     <div class="footer-col">
                         <h4>follow us</h4>
                         <div class="social-links">
-                        <a href="www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                        <a href="https://www.facebook.com/"><i class='bx bxl-facebook-circle'></i></a>
                             <a href="#"><i class="fab fa-twitter"></i></a>
                             <a href="#"><i class="fab fa-instagram"></i></a>
                             <a href="#"><i class="fab fa-linkedin-in"></i></a>
