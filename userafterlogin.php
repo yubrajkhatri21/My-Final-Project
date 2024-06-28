@@ -466,10 +466,10 @@ include('php/connector.php');
                     <div class="footer-col">
                         <h4>follow us</h4>
                         <div class="social-links">
-                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
-                            <a href="https://www.x.com/"><i class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a>
-                            <a href="https://www.linkedin.com/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="www.facebook.com"><i class='bx bxl-facebook-circle'></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-linkedin-in"></i></a>
                         </div>
                     </div>
                 </div>
